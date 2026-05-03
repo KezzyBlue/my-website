@@ -147,6 +147,7 @@ body{
     background-color: rgba(201, 212, 212, 0.456);
     text-decoration: none;
     border-radius: 8px;
+    color: black;
     text-align: center;
     border: 1px solid rgba(158, 151, 151, 0.593);
     box-sizing: border-box;
