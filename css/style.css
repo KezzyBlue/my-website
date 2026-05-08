@@ -534,7 +534,6 @@ details[open] summary{
     flex-wrap: wrap;
     background-color: azure;
     flex-direction: column;
-    flex-direction: column;
     white-space: normal;
     overflow-wrap: break-word;
     border-radius: 10px;
