@@ -538,6 +538,40 @@ details[open] summary{
     overflow-wrap: break-word;
     border-radius: 10px;
 }
+.game_tittle{
+    display: flex;
+    align-items: center;
+}
+.game_tittle h2{
+    margin-left: 10px;
+}
+.game_icon{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+.game_icon:hover{
+    transform: scale(1.1);
+}
+.game_icon p{
+    margin: 0;
+    color: gray;
+}
+.game_size{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    width: 100px;
+}
+.top_game{
+    display: flex;
+}
 @media (max-width: 768px) {
     .all{
         justify-self: center;
