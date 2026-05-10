@@ -679,4 +679,11 @@ details[open] summary{
     .progress{
         width: 100%;
     }
+    .zoom_check:checked + label img{
+    width: 70%;
+
+    border-radius: 20px;
+
+    transform: scale(1);
+    }
 }
