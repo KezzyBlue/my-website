@@ -418,27 +418,37 @@ details[open] summary{
 }
 .ggal{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
+    padding: 20px;
 }
 .ggal i{
     color: green;;
 }
 .img-box{
-    width: 31%;
+    width: 230px;
     margin-bottom: 20px;
     user-select: none;
 }
 .img-box img{
     cursor: pointer;
 }
-.ggal img{
+
+.img_doc{
     width: 100%;
+    height: 100%;
     aspect-ratio: 3 / 4;
     object-fit: cover;
-    display: flex;
+    display: block;
     border-radius: 20px;
-    margin-bottom: 20px;
+}
+.img_ngang{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
 }
 .ggal img:hover{
     transform: scale(1.05);
@@ -462,10 +472,9 @@ details[open] summary{
 }
 .gallery_group
 {
+    padding: 0 20px;
     margin-bottom: 20px;
     background-color: #ddf6ff;
-    padding: 0 20px;
- 
     border-radius: 20px;
 }
 .zoom_check{
@@ -483,8 +492,19 @@ details[open] summary{
     z-index: 999;
 }
 
-.zoom_check:checked + label img{
+.zoom_check:checked + label .img_doc{
     width: 30%;
+    height: auto;
+    border-radius: 20px;
+
+    transform: scale(1);
+}
+.zoom_check:checked + label .img_ngang{
+    width: 80%;
+    height: auto;
+
+    max-width: 1200px;
+    max-height: 90vh;
 
     border-radius: 20px;
 
@@ -679,11 +699,11 @@ details[open] summary{
     .progress{
         width: 100%;
     }
-    .zoom_check:checked + label img{
+    .zoom_check:checked + label .img_doc{
     width: 70%;
-
+    height: auto;
     border-radius: 20px;
 
     transform: scale(1);
-    }
+}
 }
